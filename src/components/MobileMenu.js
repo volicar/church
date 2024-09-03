@@ -14,7 +14,6 @@ const MobileMenu = () => {
 
   return (
     <div className="relative">
-      {/* Botão de Toggle */}
       <Button onClick={toggleMenu} className="flex items-center justify-center p-2 text-white bg-slate-950">
         {isOpen ? (
           <XIcon className="h-6 w-6" />
@@ -22,10 +21,9 @@ const MobileMenu = () => {
           <MenuIcon className="h-6 w-6" />
         )}
       </Button>
-
-      {/* Menu */}
+      
       {isOpen && (
-        <div className="absolute top-12 right-0 bg-slate-800 text-white shadow-lg z-50 flex flex-col">
+        <div className="absolute top-12 right-0 bg-slate-950 text-white shadow-lg z-50 flex flex-col">
           <Link href="/" className="p-4 hover:bg-slate-700">Home</Link>
           <Link href="/about" className="p-4 hover:bg-slate-700">About</Link>
           <Link href="/services" className="p-4 hover:bg-slate-700">Services</Link>
