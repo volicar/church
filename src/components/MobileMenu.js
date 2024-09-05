@@ -1,4 +1,4 @@
-'use client'; // Diretiva para indicar renderização no lado do cliente
+'use client'
 
 import React, { useState } from 'react';
 import Link from 'next/link';
@@ -13,7 +13,7 @@ const MobileMenu = () => {
   };
 
   return (
-    <div className="relative">
+    <div className="relative sm:hidden">
       <Button onClick={toggleMenu} className="flex items-center justify-center p-2 text-white bg-slate-950">
         {isOpen ? (
           <XIcon className="h-6 w-6" />
