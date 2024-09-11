@@ -5,8 +5,7 @@ import SocialLinks from './SocialLinks'
 
 const DesktopMenu = () => {
   return (
-    <nav className="navbar flex items-center">
-      <Logo />
+    <nav className="navbar w-full hidden md:flex items-center justify-between">
       <ul className="menu flex gap-3 uppercase">
         <li><Link href="/home">Home</Link></li>
         <li><Link href="/about">About</Link></li>
